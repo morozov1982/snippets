@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>jQuery</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Стили слайдера -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- jQuery - версия-1 -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script-->
+    <!-- jQuery - версия-2 -->
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script-->
+    <!-- jQuery - версия-3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQuery Migrate - для устранения проблем с функционалом -->
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+
+    <!-- JS слайдера, можно скачать: https://kenwheeler.github.io/slick/ -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Подключаем свой код -->
+    <script src="scripts.js"></script>
+</head>
+<body>
+    
+    <h1 class="first" data-id="22" data-name="Название">Header 1</h1>
+    
+    <h1 id="second">Header 2</h1>
+    
+    <h2 class="hello" title="test-word">Hello, World!</h2>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repudiandae atque, doloremque fugiat quam itaque. Quasi, nulla ut maxime iure exercitationem in voluptatibus facere nemo illum veritatis tenetur placeat quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repudiandae atque, doloremque fugiat quam itaque. Quasi, nulla ut maxime iure exercitationem in voluptatibus facere nemo illum veritatis tenetur placeat quam.</p>
+
+    <div class="animate" style="width: 100px; height: 50px; background: red;"></div>
+
+    <h1>Слайдер</h1>
+    <div class='slick-slider'>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-01.jpg" width="300"></div>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-02.jpg" width="300"></div>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-03.jpg" width="300"></div>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-06.jpg" width="300"></div>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-07.jpg" width="300"></div>
+        <div><img src="https://emmaus-ca.com/wp-content/uploads/2019/10/cropped-head-picture-08.jpg" width="300"></div>
+    </div>
+    
+    <p class="anim-hide">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sunt inventore tenetur non provident! Molestiae corporis quas necessitatibus aspernatur vitae, quam aliquam, nostrum illum ipsum nemo dolorum, ab distinctio sint!</p>
+    <p class="anim-show">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sunt inventore tenetur non provident! Molestiae corporis quas necessitatibus aspernatur vitae, quam aliquam, nostrum illum ipsum nemo dolorum, ab distinctio sint!</p>
+    <p class="anim-delay">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore sunt inventore tenetur non provident! Molestiae corporis quas necessitatibus aspernatur vitae, quam aliquam, nostrum illum ipsum nemo dolorum, ab distinctio sint!</p>
+
+    <ul>
+        <li>First</li>
+        <li><span>Second</span></li>
+        <li>Fird</li>
+        <li>Fourth</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>:parent</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>:parent</td>
+        </tr>
+    </table>
+
+    <form>
+        <fieldset>
+            <input name="name" value="Ой, всё!" id="target" type="text" placeholder="Hello there">
+        </fieldset>
+    </form>
+
+    <button>Click Me</button>
+
+</body>
+</html>

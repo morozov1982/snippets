@@ -1,0 +1,52 @@
+body {
+  background: lightblue;
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* img { */
+
+/*===== Т Р А Н С Ф О Р М А Ц И И  -  transform =====*/
+/*--- https://www.w3schools.com/css/css3_2dtransforms.asp ---*/
+
+/*** Перемещение, есть ещё translateX, translateY, translateZ ***/
+  /* transform: translate(-200px, 200px); */
+
+/*** Растяжение ***/
+  /* transform: scale(3, 2); */
+
+/*** Вращение, лучший - rotateZ ***/
+  /* transform: rotate(60deg); */
+
+/*** Можно совмещать ***/
+  /* transform: rotateZ(-90deg) translateY(200px) scale(2); */
+/* } */
+
+.circle {
+  width: 100px;
+  padding: 50px 0;
+  line-height: 0;
+  margin: 60px auto;
+  background: pink;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+/*** Задаёт время перехода (0.5s) ***/
+/*** работает для всех изменений, если не уточнить (background) ***/
+/*** можно использовать несколько (, transform 0.3s) ***/
+/*** задержка перед анимацией (0.6s) ***/
+/*** linear - анимация с постоянной скоростью ***/
+/*** ease-in - с ускорением ***/
+/*** ease-out - с замедлением (или просто ease) ***/
+  transition: background 0.5s, transform 0.3s 0.6s ease;
+}
+
+.circle:hover {
+  background: salmon;
+  transform: rotate(360deg);
+}

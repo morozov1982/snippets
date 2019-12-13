@@ -1,0 +1,49 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+
+/* flex-flow: row - основная ось - горизонтальная (по умолчанию) */
+/* flex-flow: column - делает основную ось вертикальной
+                        (сверху вниз) */
+/* flex-flow: row-reverse - основная ось - горизонтальная,
+                            расположение элементов задом наперёд (справа налево)  */
+/* flex-flow: column-reverse - основная ось вертикальная,
+                            расположение элементов снизу вверх */
+    flex-flow: column;
+}
+
+.box {
+    height: 100px;
+
+/* при (flex-flow: row) - 100px контролирует ширину элементов */
+/* при (flex-flow: column) - 100px контролирует высоту элементов */
+    flex: 0 0 100px;
+}
+
+.flex-container .one {
+    background: salmon;
+}
+
+.flex-container .two {
+    background: skyblue;
+}
+
+.flex-container .three {
+    background: lightgreen;
+}

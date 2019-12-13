@@ -1,0 +1,41 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 600px;
+    align-items: center; /* по основной оси */
+    justify-content: center; /* по поперечной оси */
+}
+
+.box {
+    height: 100px;
+    flex: 0 0 100px;
+}
+
+.flex-container .one {
+    background: salmon;
+}
+
+.flex-container .two {
+    background: skyblue;
+}
+
+.flex-container .three {
+    background: lightgreen;
+}

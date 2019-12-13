@@ -1,0 +1,140 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container,
+.flex-container-1,
+.flex-container-2,
+.flex-container-3,
+.flex-container-4 {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #000;
+}
+
+.flex-container .box {
+    height: 100px;
+    min-width: 100px;
+}
+
+.flex-container .one {
+    background: salmon;
+}
+
+.flex-container .two {
+    background: skyblue;
+}
+
+.flex-container .three {
+    background: lightgreen;
+}
+
+
+
+
+.flex-container-1 .box {
+    height: 100px;
+    min-width: 100px;
+}
+
+.flex-container-1 .one {
+    background: salmon;
+    flex-grow: 1; /* коэф. увеличения */
+}
+
+.flex-container-1 .two {
+    background: skyblue;
+    flex-grow: 2;
+}
+
+.flex-container-1 .three {
+    background: lightgreen;
+    flex-grow: 3;
+}
+
+
+
+
+.flex-container-2 .box {
+    height: 100px;
+    width: 320px;
+}
+
+.flex-container-2 .one {
+    background: salmon;
+    flex-shrink: 1; /* фактор сжатия */
+}
+
+.flex-container-2 .two {
+    background: skyblue;
+    flex-shrink: 2;
+}
+
+.flex-container-2 .three {
+    background: lightgreen;
+    flex-shrink: 3;
+}
+
+
+
+
+.flex-container-3 {
+    /* flex-wrap: wrap; */
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container-3 .box {
+    height: 100px;
+    min-width: 200px;
+    flex-grow: 1;
+}
+
+.flex-container-3 .one {
+    background: salmon;
+}
+
+.flex-container-3 .two {
+    background: skyblue;
+}
+
+.flex-container-3 .three {
+    background: lightgreen;
+}
+
+
+
+
+.flex-container-4 {
+    flex-wrap: wrap;
+}
+
+.flex-container-4 .box {
+    height: 100px;
+    flex-grow: 1;
+}
+
+.flex-container-4 .one {
+    background: salmon;
+    flex-basis: 100px;
+}
+
+.flex-container-4 .two {
+    background: skyblue;
+    flex-basis: 200px;
+}
+
+.flex-container-4 .three {
+    background: lightgreen;
+    flex-basis: 300px;
+}

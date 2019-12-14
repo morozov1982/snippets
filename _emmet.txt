@@ -1,0 +1,98 @@
+https://docs.emmet.io/abbreviations/
+
+HTML:
+
+! → стартовый шаблон документа
+
+lorem100 → генерирует 100 слов
+p*4>lorem → 4 абзаца
+
+
+ul.generic-list>lorem10.item*4
+
+<ul class="generic-list">
+    <li class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam vero.</li>
+    <li class="item">Laboriosam quaerat sapiente minima nam minus similique illum architecto et!</li>
+    <li class="item">Incidunt vitae quae facere ducimus nostrum aliquid dolorum veritatis dicta!</li>
+    <li class="item">Tenetur laborum quod cum excepturi recusandae porro sint quas soluta!</li>
+</ul>
+
+
+
+
+#page>div.logo+ul#navigation>li*5>a{Item $}
+
+	> → дочерний элемент; + → соседний; ^ → на уровень выше; * → сколько элементов;
+	$ → счётчик (можно $$$ → 001) ($@- → в обратном порядке) ($@3 → начиная с 3);
+	() → группировка; {} → текст внутри; [атрибут="значение"];
+	# → id; . → класс
+
+<div id="page">
+    <div class="logo"></div>
+    <ul id="navigation">
+        <li><a href="">Item 1</a></li>
+        <li><a href="">Item 2</a></li>
+        <li><a href="">Item 3</a></li>
+        <li><a href="">Item 4</a></li>
+        <li><a href="">Item 5</a></li>
+    </ul>
+</div>
+
+
+
+
+CSS:
+
+m30 → margin: 30px;
+m10-20 → margin: 10px 20px;
+m-10--20 → margin: -10px -20px;
+m1.5 → margin: 1.5em; (если значение с плавающей точкой)
+m1.5ex → margin: 1.5ex; (указываем единицы)
+	p → %
+	e → em
+	x → ex
+
+p20 → padding: 20px;
+
+tdn → text-decoration: none;
+
+c#3 → color: #333;
+	#1 → #111111
+	#e0 → #e0e0e0
+	#fc0 → #ffcc00
+
+lh2 → line-height: 2;
+fw400 → font-weight: 400;
+fwb → font-weight: bold;
+
+p!+m10e! → 	padding:  !important;
+		margin: 10em !important;
+
+-bdrs → 	-webkit-border-radius: ;
+		-moz-border-radius: ;
+		border-radius: ;
+
+-super-foo → 	-webkit-super-foo: ;
+		-moz-super-foo: ;
+		-ms-super-foo: ;
+		-o-super-foo: ;
+		super-foo: ;
+
+-trf → 	-webkit-transform: ;
+		-moz-transform: ;
+		-ms-transform: ;
+		-o-transform: ;
+		transform: ;
+
+-wm-trf → 	-webkit-transform: ;
+		-moz-transform: ;
+		transform: ;
+
+	w: webkit
+	m: moz
+	s: ms
+	o: o
+
+ov:h → 	overflow: hidden;
+
+

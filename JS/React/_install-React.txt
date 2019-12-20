@@ -2,15 +2,18 @@
     https://github.com/nodejs/help/wiki/Installation
 
 2. Входим в папку, где будет проект, далее:
-    npx create-react-app myapp
-    cd myapp
-    npm start
+    $ npx create-react-app myapp
+    $ cd myapp
+    $ npm start
+
+	2.1. Можно установить глобально (под правами админа):
+		$ npm install create-react-app -g
 	
-    npm run build - создаст оптимизированную сборку в папке build
+    $ npm run build - создаст оптимизированную сборку в папке build
 
 3. Запускаем:
-    npm install react-router-dom
-    npm install axios
+    $ npm install react-router-dom
+    $ npm install axios
 
 4. Redux:
-    npm install redux react-redux
+    $ npm install redux react-redux

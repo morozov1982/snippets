@@ -1,4 +1,4 @@
-1. Устанавливаем NodeJS:
+1. Устанавливаем NodeJS, если не установлен:
     https://github.com/nodejs/help/wiki/Installation
 
 2. Входим в папку, где будет проект, далее:
@@ -17,3 +17,26 @@
 
 4. Redux:
     $ npm install redux react-redux
+
+
+/*****========================*****/
+/***** Добавляем JSX в проект *****/
+/**** работает как препроцессор ***/
+/*****========================*****/
+
+1. Устанавливаем NodeJS, если не установлен:
+    https://github.com/nodejs/help/wiki/Installation
+
+2. Запустите команду:
+    $ npm init -y
+
+	2.1. если появляются ошибки:
+	    https://gist.github.com/gaearon/246f6380610e262f8a648e3e51cad40d
+
+3. Запустите команду:
+    $ npm install babel-cli@6 babel-preset-react-app@3
+
+4. Создайте директорию с названием src (в ней пишем свой код)
+
+5. Запускаем препроцессор JSX:
+    $ npx babel --watch src --out-dir . --presets react-app/prod

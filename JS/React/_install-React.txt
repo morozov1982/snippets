@@ -12,11 +12,12 @@
     $ npm run build - создаст оптимизированную сборку в папке build
 
 3. Запускаем:
-    $ npm install react-router-dom
+    $ npm install react-router-dom -save // -save, чтобы добавить запись в package.json
     $ npm install axios
 
 4. Redux:
     $ npm install redux react-redux
+    $ npm install redux-thunk
 
 
 /*****========================*****/

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Net Ninja</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- VueJS: https://ru.vuejs.org/v2/guide/index.html-->
+    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- production-версия, оптимизированная для размера и скорости -->
+    <!--script src="https://cdn.jsdelivr.net/npm/vue"></script-->
+</head>
+<body>
+
+    <div id="vue-app">
+        <h1>{{ greet('evening') }}</h1>
+
+        <!-- : или v-bind: -->
+        <a v-bind:href="website">Fit Moralex site</a>
+        <p>Name: {{ name }}</p>
+        <p>Job: {{ job }}</p>
+        <input type="text" v-bind:value="name" />
+        <p v-html="websiteTag"></p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

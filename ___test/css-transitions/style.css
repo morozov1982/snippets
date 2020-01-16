@@ -1,0 +1,56 @@
+body {
+    background: darkgray;
+    margin: 0;
+    padding: 0;
+}
+
+content {
+    display: flex;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    top: 0;
+    position: relative;
+}
+
+/*=============================================================*/
+/*** Ш П А Р Г А Л К А :  http://fls.guru/csstransition.html ***/
+/*=============================================================*/
+
+.button_1 {
+    color: #fff;
+    background-color: #5e5373;
+    box-shadow: 0 5px 0px #3c354a;
+
+    transition-property: background-color, top, box-shadow; /* по умчанию all */
+    transition-duration: 1s, 100ms, 100ms;
+    transition-delay: 0s, .5s, .5s;
+    transition-timing-function: ease; /* по умолчанию ease */
+
+    /*transition: all 1s ease 0s; /* свойство время замедл delay */
+    /* transition: padding 1s ease 0s, color: 2s ease-in .5s; */
+}
+
+.button_1:hover {
+    /* Если прописать transition здесь, анимация
+    будет срабатывать  Т О Л Ь К О  при наведении */
+    top: 2px;
+    box-shadow: 0 3px 0px #3c354a;
+    background-color: #18b5a4;
+}

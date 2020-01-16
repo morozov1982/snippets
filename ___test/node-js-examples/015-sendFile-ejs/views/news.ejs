@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News - <%= newsId %></title>
+    <style>
+        body {background: #b57c86;}
+        h1 {color: white; font-size: 2em;}
+        p {color: #fafafa; font-size: 1.1em;}
+    </style>
+</head>
+<body>
+    <h1>Хаюшки планетушка, read news, please! (<%= newsId %>)</h1>
+    <p><strong>Title:</strong> <%= obj.title %></p>
+    <p><strong>ID:</strong> <%= obj.id %></p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta odio repudiandae laboriosam illo recusandae numquam a doloremque vel sed accusamus officia maxime exercitationem praesentium in, unde quae delectus quaerat atque sunt tenetur nihil similique. Quas recusandae odio sapiente veritatis facere unde cupiditate fugit harum deleniti doloremque quos quam exercitationem laboriosam, a temporibus molestias dolorum excepturi placeat minima pariatur similique praesentium ipsum cumque. Modi ut distinctio accusamus labore fugiat odio nihil, necessitatibus reprehenderit minima laborum fuga illo nostrum aperiam architecto eligendi suscipit doloremque, quod repudiandae. Accusamus esse nisi, corrupti deserunt quaerat laudantium blanditiis, dicta et voluptatem distinctio nulla odio dolore optio.</p>
+    <ul>
+        <% obj.paragraphs.forEach(function(item) { %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>

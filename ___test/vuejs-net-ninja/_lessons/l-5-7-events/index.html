@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS Net Ninja</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- VueJS: https://ru.vuejs.org/v2/guide/index.html-->
+    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- production-версия, оптимизированная для размера и скорости -->
+    <!--script src="https://cdn.jsdelivr.net/npm/vue"></script-->
+</head>
+<body>
+
+    <div id="vue-app">
+
+<!-- Все события: https://ru.vuejs.org/v2/guide/events.html -->
+        <h1>Events</h1>
+        <h2>Mouse Events</h2>
+
+        <h3>Click + modifers ".once" and ".prevent"</h3>
+<!-- можно использовать v-on:click или @click -->
+        <button v-on:click.once="add(1)">Add a Year</button>
+        <button v-on:click="subtract(1)">Subtract a Year</button>
+        <a v-on:click.prevent="click" href="http://fit-moralex.com">Fit Moralex website</a>
+        
+        <h3>Double Click</h3>
+<!-- можно использовать v-on:bdlclick или @dblclick -->
+        <button v-on:dblclick="add(10)">Add 10 Years</button>
+        <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+        <p>My age is {{ age }}</p>
+
+        <h3>Mouse Move</h3>
+        <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+
+
+        <h2>Keyboard events</h2>
+    
+        <h3>Keyup</h3>
+        <label>Name:</label>
+<!-- Сработает только после нажатия enter (.enter) -->
+        <input type="text" v-on:keyup.enter="logName" />
+        <label>Age:</label>
+<!-- Сработает только после нажатия alr+enter (.alt.enter) -->
+        <input type="text" v-on:keyup.alt.enter="logAge" />
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

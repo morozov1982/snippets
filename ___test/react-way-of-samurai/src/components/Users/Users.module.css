@@ -1,0 +1,16 @@
+.userPhoto {
+    width: 100px;
+    height: 100px;
+}
+
+.pagination span {
+    cursor: pointer;
+}
+
+.pagination span:after {
+    content: "   ";                                                                                                                                                                 
+}
+
+.selectedPage {
+    font-weight: bold;
+}

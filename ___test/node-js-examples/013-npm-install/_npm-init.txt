@@ -1,0 +1,19 @@
+Создаём package.json:
+
+    $ npm init
+
+
+Устанавливаем библиотеку (express):
+
+    $ npm install express
+    $ npm install express -save // если package.json уже создан, библиотека сама туда пропишется
+
+
+Удаляем библиотеку (express):
+
+    $ npm uninstall express
+
+
+При наличии файлов проекта и package.json для установки всех необходимых пакетов:
+
+    $ npm install

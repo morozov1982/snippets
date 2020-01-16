@@ -1,0 +1,20 @@
+CLI
+
+    1. Устанавливаем:
+        $ npm install -g @vue/cli
+
+            Возможно понадобится сначала:  $ sudo chown -R $(whoami) /usr/local/lib /usr/local/bin
+                                        и: $ sudo su
+
+            понадобилось ещё: $ npm install -g @vue/cli-init
+
+    2. Заходим в папку с проектом, затем:
+        $ vue init <tmplate-name> <project-name>
+            Например:
+                $ vue init webpack my-project
+            Варианты:
+                webpack, webpack-simple, browserify, browserify-simple, simple
+
+    3. Запускаем: $ npm run dev
+
+    4. Делаем билд: $ npm run build

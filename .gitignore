@@ -1,0 +1,13 @@
+#.git/*
+#___test/*
+
+*.class
+
+*.war
+*.jar
+*.ear
+
+#.gitignore
+
+Snippets.sublime-project
+Snippets.sublime-workspace

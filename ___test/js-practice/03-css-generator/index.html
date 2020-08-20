@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Tutorial</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+
+            <label for="brtl">Левый верхний угол: </label>
+            <input type="range" name="brtl" id="brtl" min="0" max="100" value="0" oninput="rangeHandler(id)">
+            <input type="text" value="0" name="tltxt" id="tltxt"><br />
+
+            <label for="brtr">Правый верхний угол: </label>
+            <input type="range" name="brtr" id="brtr" min="0" max="100" value="0" oninput="rangeHandler(id)">
+            <input type="text" value="0" name="trtxt" id="trtxt"><br />
+
+            <label for="brbr">Правый нижний угол: </label>
+            <input type="range" name="brbr" id="brbr" min="0" max="100" value="0" oninput="rangeHandler(id)">
+            <input type="text" value="0" name="brtxt" id="brtxt"><br />
+
+            <label for="brbl">Левый нижний угол: </label>
+            <input type="range" name="brbl" id="brbl" min="0" max="100" value="0" oninput="rangeHandler(id)">
+            <input type="text" value="0" name="bltxt" id="bltxt">
+
+            <div class="container__block">
+                <div class="block" id="block"></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

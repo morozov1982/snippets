@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Tutorial</title>
+</head>
+<body>
+    <select name="fruitSelector" id="fruitSelector" onChange="selectHandler()">
+        <option value="AppleV">Apple</option>
+        <option value="OrangeV">Orange</option>
+        <option value="PineappleV">Pineapple</option>
+        <option value="BananaV">Banana</option>
+    </select>
+    <br />
+
+    <input type="range" id="rng" min="0" max="100" step="2" oninput="inputHandler()"><br />
+    <input type="text" id="rngInp">
+    <p id="rngTxt"></p>
+    <div id="rngDiv" style="width: 20px; height: 20px; background: yellowgreen;"></div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
